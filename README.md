@@ -12,6 +12,30 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+
+### After downloadig the code add a file named firbase.js and add the firbase credentials there
+for example:
+import firebase from 'firebase'
+
+
+
+const firebaseApp=firebase.initializeApp({
+    
+        apiKey: "your api key",
+        authDomain: "..",
+        databaseURL: "..",
+        projectId: "todoapp",
+        storageBucket: "..",
+        messagingSenderId: "..",
+        appId: "..",
+        measurementId: .."
+      
+    
+})
+const db=firebaseApp.firestore();
+export default  db;
+
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
